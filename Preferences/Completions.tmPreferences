@@ -49,6 +49,20 @@
 			<string>altkey</string>
 			<string>alwaysbuffer</string>
 			<string>and</string>
+			<string>androidHasPermission</string>
+			<string>androidIsAudioPlayingInBackground</string>
+			<string>androidPauseAudioPlayingInBackground</string>
+			<string>androidPermissionExists</string>
+			<string>androidRecorderGetMaxAmplitude</string>
+			<string>androidRecorderSetRecordCompressionType</string>
+			<string>androidRecorderSetRecordFormat</string>
+			<string>androidRecorderSetRecordInput</string>
+			<string>androidRecorderStartRecording</string>
+			<string>androidRecorderStopRecording</string>
+			<string>androidRequestPermission</string>
+			<string>androidResumeAudioPlayingInBackground</string>
+			<string>androidStartAudioPlayingInBackground</string>
+			<string>androidStopAudioPlayingInBackground</string>
 			<string>angle</string>
 			<string>annuity</string>
 			<string>answer</string>
@@ -79,6 +93,7 @@
 			<string>ask password</string>
 			<string>atan</string>
 			<string>atan2</string>
+			<string>audioPan</string>
 			<string>auto hilite</string>
 			<string>autoarm</string>
 			<string>autohilite</string>
@@ -367,6 +382,7 @@
 			<string>dgdatacontrolofline</string>
 			<string>dgdataofindex</string>
 			<string>dgdataofline</string>
+			<string>dgEditMode</string>
 			<string>dgfocus</string>
 			<string>dgformattedheight</string>
 			<string>dgformattedwidth</string>
@@ -388,6 +404,7 @@
 			<string>dgvscroll</string>
 			<string>dgvscrollpercent</string>
 			<string>dialogdata</string>
+			<string>difference</string>
 			<string>dim on focusout</string>
 			<string>dimmed hilite color</string>
 			<string>disable</string>
@@ -446,6 +463,12 @@
 			<string>editkeyofindex</string>
 			<string>editmenus</string>
 			<string>editmode</string>
+			<string>editModeActionControlClicked</string>
+			<string>editModeActionSelectControlClicked</string>
+			<string>editModeHideActionControl</string>
+			<string>editModeReorderCompleted</string>
+			<string>editModeReorderStarted</string>
+			<string>editModeShowActionControlForIndex</string>
 			<string>editscript</string>
 			<string>editscripts</string>
 			<string>editvalue</string>
@@ -491,6 +514,9 @@
 			<string>export widget</string>
 			<string>export with palette</string>
 			<string>extendkey</string>
+			<string>extensionFinalize</string>
+			<string>extensionInitialize</string>
+			<string>extensionStartupScript</string>
 			<string>extents</string>
 			<string>externalcommands</string>
 			<string>externalfunctions</string>
@@ -558,8 +584,11 @@
 			<string>functionnames</string>
 			<string>geometricmean</string>
 			<string>get</string>
+			<string>getActionControl</string>
 			<string>getdataofindex</string>
 			<string>getdataofline</string>
+			<string>GetEditModeActionSelectControl</string>
+			<string>GetEditModeReorderControl</string>
 			<string>getresource</string>
 			<string>getresources</string>
 			<string>global</string>
@@ -729,6 +758,7 @@
 			<string>layermode</string>
 			<string>layoutcontrol</string>
 			<string>left</string>
+			<string>leftBalance</string>
 			<string>leftindent</string>
 			<string>leftmargin</string>
 			<string>length</string>
@@ -1336,6 +1366,8 @@
 			<string>mergzxingdecodeimage</string>
 			<string>mergzxingdidscanresult</string>
 			<string>mergzxinggetbarcode</string>
+			<string>messageAuthenticationCode</string>
+			<string>messageDigest</string>
 			<string>metadata</string>
 			<string>metadata of field</string>
 			<string>metadata of image</string>
@@ -1391,8 +1423,10 @@
 			<string>mobiledeletesoundchannel</string>
 			<string>mobiledeviceorientation</string>
 			<string>mobiledisableaccelerometer</string>
+			<string>mobileDisableNFCDispatch</string>
 			<string>mobiledisablepurchaseupdates</string>
 			<string>mobileenableaccelerometer</string>
+			<string>mobileEnableNFCDispatch</string>
 			<string>mobileenablepurchaseupdates</string>
 			<string>mobileexportimagetoalbum</string>
 			<string>mobilefindcontact</string>
@@ -1406,6 +1440,8 @@
 			<string>mobilegetregisterednotifications</string>
 			<string>mobilehidestatusbar</string>
 			<string>mobileidletimerlocked</string>
+			<string>mobileIsNFCAvailable</string>
+			<string>mobileIsNFCEnabled</string>
 			<string>mobileisvoiceoverrunning</string>
 			<string>mobilelocationauthorizationstatus</string>
 			<string>mobilelockidletimer</string>
@@ -1437,6 +1473,7 @@
 			<string>mobilesensoravailable</string>
 			<string>mobilesensorreading</string>
 			<string>mobilesetallowedorientations</string>
+			<string>mobileSetFullScreenRectForOrientations</string>
 			<string>mobilesetkeyboardtype</string>
 			<string>mobilesetlocationhistorylimit</string>
 			<string>mobilesetsoundchannelvolume</string>
@@ -1510,6 +1547,7 @@
 			<string>moviecontrollerid</string>
 			<string>movietouched</string>
 			<string>movingcontrols</string>
+			<string>msgChanged</string>
 			<string>multieffect</string>
 			<string>multiple</string>
 			<string>multiple lines</string>
@@ -1536,6 +1574,7 @@
 			<string>newtool</string>
 			<string>newvideoclip</string>
 			<string>newwidget</string>
+			<string>nfcTagReceived</string>
 			<string>nodechanged</string>
 			<string>nodes</string>
 			<string>noncontiguoushilites</string>
@@ -1989,6 +2028,7 @@
 			<string>revzipreplaceitemwithfile</string>
 			<string>revzipsetprogresscallback</string>
 			<string>right</string>
+			<string>rightBalance</string>
 			<string>rightindent</string>
 			<string>rightmargin</string>
 			<string>rotate</string>
@@ -1998,6 +2038,12 @@
 			<string>roundradius</string>
 			<string>row color</string>
 			<string>row height</string>
+			<string>rowLeftRightControlClicked</string>
+			<string>rowLeftSwipeControlClicked</string>
+			<string>rowSwipeHideControl</string>
+			<string>rowSwipedLeft</string>
+			<string>rowSwipedRight</string>
+			<string>rowSwipeShowControlForIndexAndSide</string>
 			<string>row template</string>
 			<string>rowdelimiter</string>
 			<string>rrehardcopyisavailable</string>
@@ -2194,6 +2240,7 @@
 			<string>sum</string>
 			<string>suspend</string>
 			<string>suspendstack</string>
+			<string>symmetric difference</string>
 			<string>syncrate</string>
 			<string>syserror</string>
 			<string>systemcolorselector</string>
