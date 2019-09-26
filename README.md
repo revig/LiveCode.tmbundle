@@ -1,4 +1,4 @@
-# LiveCode TextMate Bundle (v. 1.0.0)
+# LiveCode TextMate Bundle (v. 1.1.0)
 
 This bundle is meant to be used for editing LiveCode script only stacks. It sends an update  
 notification over a datagram connection to LiveCode each time you save a livecodescript file  
@@ -66,4 +66,4 @@ For the license terms see the `LICENSE.txt` file.
 
 ### Meta
 
--   Version: 1.0.0  
+-   Version: 1.1.0  
