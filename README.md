@@ -42,7 +42,7 @@ datagram connections to be notified about script updates.
 
 **Please use the community version of the server engine and don't modify it's name: livecode-community-server.**  
 
-As a start choose "LiveCode" or "LiveCodeDark" from View > Theme and "LiveCode Server" from the language pop-up.  
+As a start choose "LiveCode" or "LiveCodeDark" from View > Theme and "LiveCode Server" from the language pop-up in TextMate.  
 See what happens if you type "com+" ( write a LiveCode handler) and hit tab consecutively.  
 
 **Note:** If you use the [Levure Application Framework](https://github.com/trevordevore/levure), for update notifications to work you need  
