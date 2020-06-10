@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>comment</key>
-	<string>LiveCode Syntax: LC version 9.0.3</string>
+	<string>LiveCode Syntax: LC version 9.6.0</string>
 	<key>fileTypes</key>
 	<array>
 		<string>livecodescript</string>
