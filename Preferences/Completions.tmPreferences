@@ -41,6 +41,7 @@
 			<string>allowinlineinput</string>
 			<string>allowinterrupts</string>
 			<string>allowkeyinfield</string>
+			<string>allowuserinteraction</string>
 			<string>alphadata</string>
 			<string>alternate row color</string>
 			<string>alternate row colors</string>
@@ -170,6 +171,7 @@
 			<string>browsernewurlwindow</string>
 			<string>browserout</string>
 			<string>browserover</string>
+			<string>browserprogresschanged</string>
 			<string>browserstartedloading</string>
 			<string>brush</string>
 			<string>brushcolor</string>
@@ -677,6 +679,7 @@
 			<string>import snapshot</string>
 			<string>import widget</string>
 			<string>include</string>
+			<string>infinity</string>
 			<string>ink</string>
 			<string>innerglow</string>
 			<string>innershadow</string>
@@ -735,6 +738,7 @@
 			<string>is within</string>
 			<string>isnumber</string>
 			<string>isotomac</string>
+			<string>issecure</string>
 			<string>itemdelimiter</string>
 			<string>itemoffset</string>
 			<string>joinstyle</string>
@@ -742,6 +746,7 @@
 			<string>jsontoarray</string>
 			<string>keyboardactivated</string>
 			<string>keyboarddeactivated</string>
+			<string>keyboardtype</string>
 			<string>keydown</string>
 			<string>keys</string>
 			<string>keysdown</string>
@@ -755,6 +760,7 @@
 			<string>launch url in widget</string>
 			<string>launchdatachanged</string>
 			<string>layer</string>
+			<string>layercliprect</string>
 			<string>layermode</string>
 			<string>layoutcontrol</string>
 			<string>left</string>
@@ -836,8 +842,10 @@
 			<string>lockscreen</string>
 			<string>locktext</string>
 			<string>lockupdates</string>
+			<string>log</string>
 			<string>log10</string>
 			<string>log2</string>
+			<string>logmessage</string>
 			<string>longfilepath</string>
 			<string>longwindowtitles</string>
 			<string>lookandfeel</string>
@@ -1432,6 +1440,7 @@
 			<string>mobilefindcontact</string>
 			<string>mobilegetcontactdata</string>
 			<string>mobilegetdevicetoken</string>
+			<string>mobilegetkeyboarddisplay</string>
 			<string>mobilegetlaunchdata</string>
 			<string>mobilegetlaunchurl</string>
 			<string>mobilegetlocationhistory</string>
@@ -1474,6 +1483,8 @@
 			<string>mobilesensorreading</string>
 			<string>mobilesetallowedorientations</string>
 			<string>mobileSetFullScreenRectForOrientations</string>
+			<string>mobilesetkeyboarddisplay</string>
+			<string>mobilesetkeyboardreturnKey</string>
 			<string>mobilesetkeyboardtype</string>
 			<string>mobilesetlocationhistorylimit</string>
 			<string>mobilesetsoundchannelvolume</string>
@@ -1827,6 +1838,7 @@
 			<string>retainpostscript</string>
 			<string>returninfield</string>
 			<string>returnkey</string>
+			<string>returnkeytype</string>
 			<string>revappversion</string>
 			<string>revbrowseraddjavascripthandler</string>
 			<string>revbrowserback</string>
@@ -2243,6 +2255,8 @@
 			<string>symmetric difference</string>
 			<string>syncrate</string>
 			<string>syserror</string>
+			<string>systemappearance</string>
+			<string>systemappearancechanged</string>
 			<string>systemcolorselector</string>
 			<string>systemfileselector</string>
 			<string>systempixelscale</string>
