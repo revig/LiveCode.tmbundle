@@ -28,7 +28,7 @@ ${0}</string>
 	<key>scope</key>
 	<string>text.livecode</string>
 	<key>tabTrigger</key>
-	<string>func+</string>
+	<string>func</string>
 	<key>uuid</key>
 	<string>64AD35C1-E71B-4918-A3AD-9385CA9DB5BF</string>
 </dict>

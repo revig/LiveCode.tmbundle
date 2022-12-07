@@ -3,68 +3,94 @@ constant kDefaultPort = "61373"
 
 
 command levureExternalEditorStartServer pPort
-  local tError, tDefaultInterface
+	local tError, tDefaultInterface
 
-  if pPort is not an integer then put kDefaultPort into pPort
+	if pPort is not an integer then put kDefaultPort into pPort
 
-  put the defaultnetworkinterface into tDefaultInterface
-  set the defaultnetworkinterface to "127.0.0.1"
+	put the defaultnetworkinterface into tDefaultInterface
+	set the defaultnetworkinterface to "127.0.0.1"
 	accept datagram connections on port pPort with message "messageReceived"
-  put the result into tError
+	put the result into tError
 
-  set the defaultnetworkinterface to tDefaultInterface
+	set the defaultnetworkinterface to tDefaultInterface
 
-  return tError for error
+	return tError for error
 end levureExternalEditorStartServer
 
 
 
 command messageReceived pSocket, pMsg
-	  local tStackName, tFilename, tError
+	local tQueryA, tError
 
-		-- put pMsg ------------------------ temp test
-	  split pMsg by "&" and "="
-	  put textDecode(urldecode(pMsg["stack"]), "utf8") into tStackName
-	  put textDecode(urldecode(pMsg["filename"]), "utf8") into tFilename
+	put pMsg into tQueryA
+	
+	split tQueryA by "&" and "="
+		
+	repeat for each key tKey in tQueryA
+		put textDecode(urldecode(tQueryA[tKey]), "utf8") into tQueryA[tKey]
+	end repeat
 
-	  if there is a stack tStackName and the filename of stack tStackName is tFilename then
-	    try
-	      local tOldPreserveVariables, tOldExplicitVariables, tDefaultStack
+	switch tQueryA["command"]
+		case "open"
+			if there is a stack tQueryA["filename"] then
+				try
+					go stack tQueryA["filename"]
+				catch tError
 
-	      put the defaultStack into tDefaultStack
-	      put the preserveVariables into tOldPreserveVariables
+				finally
+					-- write "success" to socket pIPAddr
+				end try
 
-	      set the defaultStack to me
-	      set the preserveVariables to true
+				if tError is not empty then
+					throw tError
+				end if
 
-	      lock messages
-	      create button "CompileScript"
+			else
+				put "Stack file" && tQueryA["filename"] && "does not exist." into tError
+				-- write "error:" && tError to socket pIPAddr
+				answer error tError
+			end if
+		break
+		default
+			if there is a stack tQueryA["stack"] and the filename of stack tQueryA["stack"] is tQueryA["filename"] then
+				try
+					local tOldPreserveVariables, tOldExplicitVariables, tDefaultStack
 
-	      set the script of button "CompileScript" to (line 2 to -1 of url("file:" & tFilename))
-	      put the result into tError
+					put the defaultStack into tDefaultStack
+					put the preserveVariables into tOldPreserveVariables
 
-	      if tError is empty then
-	        set the script of stack tStackName to the script of button "CompileScript"
-	        -- write "success" to socket pSocket
-					answer "Success!"
-	      end if
+					set the defaultStack to me
+					set the preserveVariables to true
 
-	      delete button "CompileScript"
-	      set the preserveVariables to tOldPreserveVariables
-	      set the defaultStack to tDefaultStack
-	      unlock messages
-	    catch tError
+					lock messages
+					create button "CompileScript"
 
-	    end try
+					set the script of button "CompileScript" to (line 2 to -1 of url("file:" & tQueryA["filename"]))
+					put the result into tError
 
-	    if tError is not empty then
-	      write "error:" && tError to socket preserveVariables
-	      beep
-	      put tError
-	      answer error "Error setting script of stack" && tStackName & "."
-	    end if
-	  else
-	    -- write "file not found" to socket preserveVariables
-			answer error "File not found!"
-	  end if
+					if tError is empty then
+						set the script of stack tQueryA["stack"] to the script of button "CompileScript"
+						-- write "success" to socket pSocket
+						answer "Success!"
+					end if
+
+					delete button "CompileScript"
+					set the preserveVariables to tOldPreserveVariables
+					set the defaultStack to tDefaultStack
+					unlock messages
+				catch tError
+
+				end try
+
+				if tError is not empty then
+					-- write "error:" && tError to socket pSocket
+					beep
+					put tError
+					answer error "Error setting script of stack" && tQueryA["stack"] & "."
+				end if
+			else
+				-- write "file not found" to socket pSocket
+				answer error "File not found!"
+			end if
+		end switch
 end messageReceived
