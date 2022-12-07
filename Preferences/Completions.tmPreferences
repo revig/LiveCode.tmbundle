@@ -10,6 +10,9 @@
 	<dict>
 		<key>completions</key>
 		<array>
+			<string>abbr</string>
+			<string>abbrev</string>
+			<string>abbreviated</string>
 			<string>abs</string>
 			<string>acceleratedrendering</string>
 			<string>accelerationchanged</string>
@@ -19,7 +22,7 @@
 			<string>accentcolor</string>
 			<string>accept</string>
 			<string>acceptdrop</string>
-			<string>acos</string>
+			<string>acos()</string>
 			<string>activatepalettes</string>
 			<string>adclicked</string>
 			<string>add</string>
@@ -32,6 +35,7 @@
 			<string>adloadfailed</string>
 			<string>adresizeend</string>
 			<string>adresizestart</string>
+			<string>after</string>
 			<string>aliasreference</string>
 			<string>allow column resizing</string>
 			<string>allow editing</string>
@@ -65,7 +69,7 @@
 			<string>androidStartAudioPlayingInBackground</string>
 			<string>androidStopAudioPlayingInBackground</string>
 			<string>angle</string>
-			<string>annuity</string>
+			<string>annuity()</string>
 			<string>answer</string>
 			<string>answer color</string>
 			<string>answer effect</string>

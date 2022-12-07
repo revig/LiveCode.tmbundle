@@ -1,13 +1,14 @@
-# LiveCode TextMate Bundle (v. 1.3.0)
+# LiveCode TextMate Bundle (v. 1.4.0)
 
 This bundle is meant to be used for editing LiveCode script only stacks. It sends an update
 notification over a datagram connection to LiveCode each time you save a livecodescript file
-in TextMate using the appropriate key equivalent (⌃⌘S). Use a stack in LiveCode accepting
-datagram connections to be notified about script updates.
+in TextMate using the appropriate key equivalent **⌃⌘S**. Use a stack in LiveCode accepting
+datagram connections to be notified about script updates or use the [Levure Application Framework](https://github.com/trevordevore/levure), 
+see note below.
 
 ## Features
 
--   Script error checking ("linting"), key equivalent is ⌃⇧V
+-   Script error checking ("linting"), key equivalent is **⌃⇧V**
 -   Update notification
 -   Collapsing Text Blocks (Foldings)
 -   Handler Pop-up
@@ -35,15 +36,15 @@ datagram connections to be notified about script updates.
       Variable Name:
       PATH
       Value:
-      $PATH:/opt/local/bin:/usr/local/bin:/usr/texbin:/Library/WebServer/CGI-Executables/LiveCodeServer/CommunityServer
+      $PATH:/opt/local/bin:/usr/local/bin:/usr/texbin:/Library/WebServer/CGI-Executables/LiveCodeServer
     	Adjust the path to your needs.
-    Add a variable "TM_livecode_explicit_vars" to TextMate settings and set it to "true" or "false".
+    Add a variable "TM\_livecode\_explicit\_vars" to TextMate settings and set it to "true" or "false".
 
 
-**Please use the community version of the server engine and don't modify it's name: livecode-community-server.**
+**Please rename your server engine to: livecode-server, even if you use the pro version.**
 
 As a start choose "LiveCode" or "LiveCodeDark" from View > Theme and "LiveCode Server" from the language pop-up in TextMate.
-See what happens if you type "com+" ( write a LiveCode handler) and hit tab consecutively.
+See what happens if you type "com" ( write a LiveCode handler) and hit tab consecutively.
 
 **Note:** If you use the [Levure Application Framework](https://github.com/trevordevore/levure), for update notifications to work you need
 to replace the Levure script "external_editor_server.livecodescript" in levure/utils/external_editor_server/
@@ -56,7 +57,7 @@ with the downloaded LiceCode.tmbundle file.
 
 ## Linting
 
-Use the key equivalent ⌃⇧V for script error checking.
+Use the key equivalent **⌃⇧V** for script error checking.
 
 **Note:** The linter code adapted to TextMate was taken from the [LiveCode language package for Atom](https://github.com/peter-b/atom-language-livecode).
 
@@ -66,4 +67,4 @@ For the license terms see the `LICENSE.txt` file.
 
 ### Meta
 
--   Version: 1.3.0  
+-   Version: 1.4.0  

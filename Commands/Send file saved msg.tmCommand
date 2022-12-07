@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>saveActiveFile</string>
 	<key>command</key>
-	<string>#!/usr/bin/env livecode-community-server
+	<string>#!/usr/bin/env livecode-server
 
 if the outputLineEndings = "cr" then
 	set the outputLineEndings to "lf"
