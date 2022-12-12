@@ -21,9 +21,7 @@ see note below.
 
 ## Requirements
 
--   LiveCode Server version ≥ 6.6.0
-    You can download LiveCode Server at <https://downloads.livecode.com/livecode>.
-    Install it somewhere appropriate.
+-   LiveCode Server version ≥ 6.6.0 (Install it somewhere appropriate.)
 
 ## Installation
 
@@ -32,12 +30,12 @@ see note below.
 -   You can install the bundle by placing it in ~/Library/Application Support/TextMate/Bundles/.
     The ~ character in this path refers to your home directory.
 -   To use LiveCode specific TextMate **commands** and to enable **linting** add the
-    	server directory to the PATH variable in TextMate settings like:
-      Variable Name:
-      PATH
-      Value:
-      $PATH:/opt/local/bin:/usr/local/bin:/usr/texbin:/Library/WebServer/CGI-Executables/LiveCodeServer
-    	Adjust the path to your needs.
+    	server directory to the PATH variable in TextMate settings like:  
+      Variable Name:  
+      PATH  
+      Value:  
+      $PATH:/opt/local/bin:/usr/local/bin:/usr/texbin:/Library/WebServer/CGI-Executables/LiveCodeServer  
+    	Adjust the path to your needs.  
     Add a variable "TM\_livecode\_explicit\_vars" to TextMate settings and set it to "true" or "false".
 
 
